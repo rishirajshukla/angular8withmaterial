@@ -1,0 +1,14 @@
+:root {
+  --white: #fff;
+  --success: hsl(141, 46%, 52%);
+  --error: hsl(0, 91%, 70%);
+  --warning: hsl(45, 100%, 51%);
+
+  --primary: #1b292d;
+  --primary-dark: #0d1315;
+  --primary-light: #2f3c40;
+  --secondary: hsla(12, 93%, 46%, 0.7);
+  /* --secondary-dark: var(--grey100); */
+
+  --body: hsla(174, 25%, 71%, 0.18);
+}

@@ -1,0 +1,71 @@
+.title {
+  font-size: 1.26em;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+/* 
+.menu-title {
+  background-color: var(--bg2);
+  font-size: 0.89em;
+  font-weight: bold;
+  padding: 0.5em 1em;
+} */
+
+.underline {
+  border-bottom: 1px solid var(--border-color);
+  padding: 0 0 0.71em;
+}
+
+.capitalize,
+.cap {
+  text-transform: capitalize;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.lower {
+  text-transform: lowercase;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+hr {
+  margin: 0;
+  border: none;
+  height: 0.15em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg2);
+}
+
+hr:before {
+  position: absolute;
+  content: attr(data-text);
+  padding: 0px 1em;
+  background: var(--bg2);
+  font-size: 0.8em;
+} /* USAGE:  <hr data-text="OR"> <hr class="bg-dark fbox-je text-blue" data-text="OR">*/
+
+.scrollable::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+.scrollable::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  background-color: var(--grey2);
+}
+
+.fluid {
+  padding: 0.74em;
+}

@@ -1,0 +1,25 @@
+/*_______#GLOBAL_______*/
+div, section, main, footer, nav, article,ul,li {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.42;
+}
+
+@media screen and (min-width: 1601px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/*_______#CONTAINER____EXTEND___*/
+.container-fluid {
+  /* max-width: 92.11em; */
+  padding: 0 1em;
+  margin: 0 auto;
+  position: relative;
+}

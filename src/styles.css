@@ -1,0 +1,59 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+/* 1. reset */
+@import url("./assets/css/reset.css");
+
+/* vars */
+@import url("./assets/css/vars.css");
+
+/* global*/
+@import url("./assets/css/global.css");
+
+/*typography */
+@import url("./assets/css/typography.css");
+
+/* buttons */
+/* @import url("./assets/css/buttons.css"); */
+
+/* card */
+/* @import url("./assets/css/card.css"); */
+
+/* forms */
+/* @import url("./assets/css/forms.css"); */
+
+/* Table */
+/* @import url("./assets/css/table.css"); */
+
+/* Tabs */
+/* @import url("./assets/css/tabs.css"); */
+
+/* Menu */
+/* @import url("./assets/css/menu.css"); */
+
+/* dropdown */
+/* @import url("./assets/css/dropdown.css"); */
+
+/* blankslate */
+/* @import url("./assets/css/blankslate.css"); */
+
+/* SVG */
+@import url("./assets/css/svg.css");
+
+/* breadcrumbs */
+/* @import url("./assets/css/breadcrums.css"); */
+
+/* Animations */
+/* @import url("./assets/css/animations.css"); */
+
+/* Modals */
+/* @import url("./assets/css/modal.css"); */
+
+/* Tooltip */
+
+/* @import url("./assets/css/tooltip.css"); */
+
+/* utilities  */
+@import url("./assets/css/u-color.css");
+@import url("./assets/css/u-other.css");
+@import url("./assets/css/u-placement.css");
+@import url("./assets/css/u-spacing.css");

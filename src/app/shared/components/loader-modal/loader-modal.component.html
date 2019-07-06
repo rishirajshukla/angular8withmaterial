@@ -1,0 +1,50 @@
+<div class="loader-modal" *ngIf="showLoader">
+  <ng-container *ngIf="!loaderState">
+    <div class="spinner"></div>
+    <h3>{{ loader.title }}</h3>
+    <h4>{{ loader.subtitle }}</h4>
+
+    <div class="sm" *ngIf="loader.loadingText">{{ loader.loadingText }}</div>
+  </ng-container>
+
+  <ng-container *ngIf="loaderState === 'success'">
+    <svg class="icon-large" viewBox="0 0 507.2 507.2">
+      <circle cx="253.6" cy="253.6" r="253.6" fill="#32ba7c" />
+      <path
+        fill="#0aa06e"
+        d="M188.8 368l130.4 130.4c108-28.8 188-127.2 188-244.8v-7.2L404.8 152l-216 216z"
+      />
+      <g fill="#fff">
+        <path
+          d="M260 310.4c11.2 11.2 11.2 30.4 0 41.6l-23.2 23.2c-11.2 11.2-30.4 11.2-41.6 0L93.6 272.8c-11.2-11.2-11.2-30.4 0-41.6l23.2-23.2c11.2-11.2 30.4-11.2 41.6 0L260 310.4z"
+        />
+        <path
+          d="M348.8 133.6c11.2-11.2 30.4-11.2 41.6 0l23.2 23.2c11.2 11.2 11.2 30.4 0 41.6l-176 175.2c-11.2 11.2-30.4 11.2-41.6 0l-23.2-23.2c-11.2-11.2-11.2-30.4 0-41.6l176-175.2z"
+        />
+      </g>
+    </svg>
+    <h2>{{ msg }}</h2>
+  </ng-container>
+  <ng-container *ngIf="loaderState === 'error'">
+    <svg class="icon-large" viewBox="0 0 507.2 507.2">
+      <circle cx="253.6" cy="253.6" r="253.6" fill="#f15249" />
+      <path
+        fill="#ad0e0e"
+        d="M147.2 368L284 504.8c115.2-13.6 206.4-104 220.8-219.2L367.2 148l-220 220z"
+      />
+      <path
+        fill="#fff"
+        d="M373.6 309.6c11.2 11.2 11.2 30.4 0 41.6l-22.4 22.4c-11.2 11.2-30.4 11.2-41.6 0l-176-176c-11.2-11.2-11.2-30.4 0-41.6l23.2-23.2c11.2-11.2 30.4-11.2 41.6 0l175.2 176.8z"
+      />
+      <path
+        fill="#d6d6d6"
+        d="M280.8 216L216 280.8l93.6 92.8c11.2 11.2 30.4 11.2 41.6 0l23.2-23.2c11.2-11.2 11.2-30.4 0-41.6L280.8 216z"
+      />
+      <path
+        fill="#fff"
+        d="M309.6 133.6c11.2-11.2 30.4-11.2 41.6 0l23.2 23.2c11.2 11.2 11.2 30.4 0 41.6L197.6 373.6c-11.2 11.2-30.4 11.2-41.6 0l-22.4-22.4c-11.2-11.2-11.2-30.4 0-41.6l176-176z"
+      />
+    </svg>
+    <h2>{{ msg }}</h2>
+  </ng-container>
+</div>

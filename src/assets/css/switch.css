@@ -1,0 +1,37 @@
+/* SWITCH V2 */
+.switch {
+  box-sizing: content-box;
+  --height: 16px;
+  --pad: 3px;
+  position: relative;
+  width: calc(var(--height) * 2.4);
+  height: var(--height);
+  background-color: var(--light2);
+  border: 2px solid var(--light);
+  padding: var(--pad);
+  border-radius: 5em;
+  transition: all 0.4s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+  cursor: pointer;
+}
+
+.switch.active {
+  background-color: #2a98ef;
+}
+
+.switch:before {
+  content: "";
+  position: absolute;
+  width: var(--height);
+  height: var(--height);
+  top: var(--pad);
+  left: var(--pad);
+  transform: translateX(0);
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 1px 0px 8px 1px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+}
+
+.switch.active:before {
+  transform: translateX(22.4px);
+}

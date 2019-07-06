@@ -1,0 +1,36 @@
+<div class="imageContainer">
+  <div class="imgUploadBox" *ngIf="!showImg">
+    <input type="file" id="file1" class="inputFile" (change)="addImg($event)" />
+    <svg class="icon" style="width: 100px; height: 100px" viewBox="0 0 512 512">
+      <path fill="#f8d539" d="M0 0h512v512H0z" />
+      <path
+        fill="#fff"
+        d="M416 409.328H96V364.91a26.667 26.667 0 0 1 16.48-24.637l90.848-37.539-.558-22.543L176 240v-54.543c-.59-40.879 29.063-75.926 69.473-82.113a80.094 80.094 0 0 1 63.218 19.176A80.089 80.089 0 0 1 336 182.672V240l-26.77 40.16-.558 22.543 90.848 37.535A26.675 26.675 0 0 1 416 364.91zm0 0"
+      />
+      <g fill="#708299">
+        <path
+          d="M32 160H0V0h160v32H32zm0 0M144 512H0V368h32v112h112zm0 0M512 160h-32V32H352V0h160zm0 0M512 512H352v-32h128V352h32zm0 0"
+        />
+      </g>
+      <path fill="#fff" d="M416 64h32v32h-32zm0 0M416 128h32v32h-32zm0 0" />
+    </svg>
+    <label for="file1" class="inputLabel">
+      <span class="m-t">{{ imgUploadText }}</span>
+      <span *ngIf="error" class="img-error">{{ error }}</span>
+    </label>
+  </div>
+  <div
+    class="finalImage"
+    *ngIf="showImg"
+    [style.backgroundImage]="'url(' + buffer + ')'"
+  >
+    <div class="delImg group-h" (click)="removeImg()">
+      <span> <span i18n> Size: </span> {{ size }} KB</span>
+      <svg class="icon" *ngIf="showImg" viewBox="0 0 47.971 47.971">
+        <path
+          d="M28.228 23.986L47.092 5.122a2.998 2.998 0 0 0 0-4.242 2.998 2.998 0 0 0-4.242 0L23.986 19.744 5.121.88a2.998 2.998 0 0 0-4.242 0 2.998 2.998 0 0 0 0 4.242l18.865 18.864L.879 42.85a2.998 2.998 0 1 0 4.242 4.241l18.865-18.864L42.85 47.091c.586.586 1.354.879 2.121.879s1.535-.293 2.121-.879a2.998 2.998 0 0 0 0-4.242L28.228 23.986z"
+        />
+      </svg>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,53 @@
+<!-- side-nav small screen -->
+<mat-sidenav
+  #drawer
+  class="sidenav"
+  fixedInViewport
+  [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+  [mode]="(isHandset$ | async) ? 'over' : 'side'"
+  [opened]="(isHandset$ | async) === false"
+>
+  <!-- side-nav-list -->
+  <app-side-nav></app-side-nav>
+  <!-- end -->
+</mat-sidenav>
+<mat-sidenav-container class="sidenav-container">
+  <!-- side-nav bigger screen -->
+  <mat-sidenav
+    #drawer
+    class="sidenav"
+    fixedInViewport
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="(isHandset$ | async) === false"
+  >
+    <!-- side-nav-list -->
+    <app-side-nav></app-side-nav>
+    <!-- end -->
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar class="fbox-sb">
+      <!-- toggle button -->
+      <div>
+        <button
+          type="button"
+          aria-label="Toggle sidenav"
+          mat-icon-button
+          (click)="drawer.toggle()"
+          *ngIf="isHandset$ | async"
+        >
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+      </div>
+      <!-- end -->
+      <!-- header -->
+      <app-header></app-header>
+      <!-- end -->
+    </mat-toolbar>
+    <!-- Main content goes here -->
+    <div class="body">
+      <router-outlet></router-outlet>
+    </div>
+    <!-- end -->
+  </mat-sidenav-content>
+</mat-sidenav-container>

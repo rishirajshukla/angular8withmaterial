@@ -1,0 +1,53 @@
+/*_____________ ROOT LOADER _____________*/
+
+.root-loader {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #4d5256;
+}
+
+.root-loader .loader {
+  position: relative;
+  background-color: white;
+  width: 4em;
+  height: 3px;
+  overflow: hidden;
+}
+
+.root-loader .loader:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #2ca58d;
+  animation: progress 2s infinite linear;
+}
+
+@keyframes progress {
+  0% {
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+  98% {
+    transform: translateX(200%);
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}

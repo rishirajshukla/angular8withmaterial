@@ -1,0 +1,135 @@
+/* Colors */
+
+.bg-primary {
+  background: var(--primary);
+}
+.bg-primary-light {
+  background: var(--primary-light);
+}
+.bg-primary-dark {
+  background: var(--primary-dark);
+}
+.bg-secondary {
+  /* background: rgb(71,75,241); */
+  background: linear-gradient(
+    90deg,
+    rgba(51, 71, 173, 0.23) 0%,
+    rgba(34, 34, 216, 0.171) 100%
+  );
+}
+.bg-secondary-dark {
+  background: var(--secondary-dark);
+}
+.bg-grad1 {
+  background: rgb(71, 75, 241);
+  background: linear-gradient(
+    90deg,
+    rgba(71, 75, 241, 0.6530987394957983) 0%,
+    rgba(109, 73, 241, 1) 48%,
+    rgba(159, 71, 241, 1) 98%
+  );
+}
+.bg-success {
+  background: var(--success);
+}
+.bg-error {
+  background: var(--error);
+}
+/* .bg-info {
+  background: var(--cyan);
+} */
+.bg-info {
+  background: rgb(190, 123, 56);
+  background: linear-gradient(
+    90deg,
+    rgba(190, 123, 56, 0.4682247899159664) 0%,
+    rgba(218, 123, 28, 0.7399334733893557) 100%
+  );
+}
+.bg-warning {
+  background: rgb(218, 53, 28);
+  background: linear-gradient(
+    90deg,
+    rgba(218, 53, 28, 0.5718662464985995) 0%,
+    rgba(218, 53, 28, 0.6839110644257703) 100%
+  );
+}
+/* .bg-warning {
+  background: var(--teal);
+} */
+.bg-danger {
+  background: rgb(255, 34, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 34, 0, 0.43461134453781514) 0%,
+    rgba(255, 34, 0, 0.700717787114846) 100%
+  );
+}
+/* .bg-danger {
+  background: var(--red);
+} */
+
+.bg-white {
+  background: white;
+}
+.bg-light {
+  background: var(--light);
+}
+.bg-light2 {
+  background: var(--light2);
+}
+.bg-grey {
+  background: var(--grey);
+}
+.bg-grey2 {
+  background: var(--grey2);
+}
+.bg-dark {
+  background: rgb(71, 75, 241);
+  background: linear-gradient(
+    90deg,
+    rgba(71, 75, 241, 0.6530987394957983) 0%,
+    rgba(71, 75, 241, 1) 100%
+  );
+}
+.bg-dark2 {
+  background: var(--dark2);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+.text-secondary {
+  color: var(--secondary);
+}
+.text-secondary-dark {
+  color: var(--secondary-dark);
+}
+.text-success {
+  color: var(--success);
+}
+.text-error {
+  color: var(--error);
+}
+
+.text-white {
+  color: white !important;
+}
+.text-light {
+  color: var(--light);
+}
+.text-light2 {
+  color: var(--light2);
+}
+.text-grey {
+  color: var(--grey);
+}
+.text-grey2 {
+  color: var(--grey2);
+}
+.text-dark {
+  color: var(--dark);
+}
+.text-dark2 {
+  color: var(--dark2);
+}

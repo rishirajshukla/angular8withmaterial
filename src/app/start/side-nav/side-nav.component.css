@@ -1,0 +1,18 @@
+.side-header {
+  background-color: var(--primary-dark) !important;
+  color: white;
+}
+.anchor {
+  color: white !important;
+}
+
+.anchor:hover {
+  background-color: var(--secondary) !important;
+}
+.mat-toolbar {
+  background: inherit;
+}
+
+.active {
+  background-color: var(--primary-light) !important;
+}

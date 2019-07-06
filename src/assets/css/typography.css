@@ -1,0 +1,108 @@
+/*_______#TYPOGRAPHY_______*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0.56em 0 0.44em 0;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 1.42em;
+}
+
+h2 {
+  font-size: 1.26em;
+}
+
+h3 {
+  font-size: 1.12em;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1em;
+  margin-top: 1em;
+  margin-bottom: 1.12em;
+}
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: italic;
+}
+
+small {
+  font-size: 0.89rem;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--link-color, #00a8e8);
+}
+
+.section-title {
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 27px;
+  font-size: 36px;
+  letter-spacing: 2px;
+}
+
+
+.elip {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 117px;
+}
+
+.num {
+  font-size: 2.4em;
+  font-weight: bold;
+  line-height: 30px;
+  margin-bottom: 0px !important;
+  color: #2a98ef;
+  /* border-bottom: 3px solid currentColor; */
+}
+
+.num.blue {
+  color: #2a98ef;
+  border-bottom: 0px solid currentColor;
+}
+
+.num.red {
+  color: #f00;
+  border-bottom: 0px solid currentColor;
+} 
+
+.num.yellow {
+  color: #ff0;
+  border-bottom: 3px solid currentColor;
+}
+
+.num.black {
+  color: #121212;
+  /* border-bottom: 3px solid currentColor; */
+}
+
+.num.white {
+  color: #fff;
+  border-bottom: 3px solid currentColor;
+}
+
+.num.green {
+  color: green;
+  border-bottom: 0px solid currentColor;
+}
+
+.num.violet {
+  color: violet;
+  border-bottom: 3px solid currentColor;
+}

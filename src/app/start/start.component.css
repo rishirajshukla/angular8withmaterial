@@ -1,0 +1,17 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+  background: var(--primary);
+}
+
+mat-toolbar {
+  background-color: var(--primary);
+  color: white;
+}
+
+.body {
+  padding: 2em 1em;
+}

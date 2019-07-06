@@ -1,0 +1,21 @@
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--body);
+}
+
+mat-card {
+  width: 400px;
+}
+
+.full {
+  display: flex;
+  flex-direction: column;
+}
+
+.full > * {
+  width: 100%;
+}

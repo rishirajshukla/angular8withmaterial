@@ -1,0 +1,6 @@
+<ng-container *ngIf="users$ | async as user; else loader">
+  <app-table [columnDefs]="columnDefs" [rowData]="user"></app-table>
+</ng-container>
+<ng-template #loader>
+  <app-loader></app-loader>
+</ng-template>

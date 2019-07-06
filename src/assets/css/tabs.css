@@ -1,0 +1,45 @@
+/*_______#TABS and PAGE HEADER_______*/
+
+.tab-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: .5em 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.tabs {
+  box-sizing: border-box;
+  /* width: 100%; */
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 0.89em;
+}
+
+.tab {
+  padding: 0.5em 1em;
+  color: var(--text);
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.tab:not(:last-child) {
+  margin-right: .44em;
+}
+
+.tab:hover {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+  transition: color 0.31s linear;
+}
+
+.tab.active,
+.tab.active:hover {
+  color: var(--primary-light);
+  border-bottom-color: var(--primary-light);
+  transition: color 0.31s linear;
+}

@@ -1,0 +1,68 @@
+.imageContainer {
+  background: transparent;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.imgUploadBox {
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+
+.inputLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%);
+  color: #121212;
+}
+
+.inputFile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  padding: 0;
+  margin: 0;
+}
+
+.img-error {
+  background: var(--red);
+  font-size: 0.8em;
+  padding: 5px 8px;
+  color: var(--text);
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.finalImage {
+  min-height: 9em;
+  max-height: 12em;
+  padding: 0.5em;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  border: 1px dotted var(--whitish);
+  border-radius: 12px;
+}
+
+.finalImage .delImg {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  background: var(--grad4);
+  padding: 0.5em;
+  border-radius: 8px;
+}
